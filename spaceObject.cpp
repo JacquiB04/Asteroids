@@ -219,7 +219,28 @@ void SpaceObject::applyThrust(double engineThrust) {
 
 // -------------------------------------------------------------
 void SpaceObject::draw(sf::RenderWindow& win) {
-	if (type == SHIP) {
+	
+	switch type {
+		
+		case SHIP:
+			drawShip(win);
+			break;
+
+		case SHIP_EXPLODING:
+			drawExplodingShip(win);
+			break;
+
+		case (ASTEROID || PHOTON_TORPEDO):
+			drawAsteroid(win);
+			break;
+
+		case SHIP_GONE:
+			type = SHIP;
+			setLocation(200, 200);
+			break;
+	}
+	
+	/*if (type == SHIP) {
 		drawShip(win);
 	}
 	
@@ -234,7 +255,7 @@ void SpaceObject::draw(sf::RenderWindow& win) {
 	if (type == SHIP_GONE) {	// redraw ship
 		type = SHIP;
 		setLocation(200, 200);
-	}
+	}*/
 
 	timesDrawn++;
 }
