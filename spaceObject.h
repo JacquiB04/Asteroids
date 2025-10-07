@@ -48,8 +48,8 @@ public:
 	*	@param angle - angle of type
 	*	@param timesDrawn - times SpaceObject has been drawn
 	*/
-	SpaceObject(SpaceObjType type, double radius,
-		Point location, Point velocity, double angle, int timesDrawn);
+	SpaceObject(SpaceObjType type, double radius, Point location, 
+		Point velocity, double angle, int timesDrawn);
 
 
 	//-----------------------------------------------------------
@@ -190,7 +190,7 @@ public:
 	/** ---------------------------------------------------------
 	*   Draws the spaceobject on the given window
 	*
-	* 	@param win - the window on which we’ll draw the space 
+	* 	@param win - the window on which weï¿½ll draw the space 
 	*				 object
 	---------------------------------------------------------- */
 	void draw(sf::RenderWindow& win);
@@ -244,7 +244,7 @@ private:
 	/**
 	*   Draws the spaceobject on the given window
 	*
-	* 	@param win - the window on which we’ll draw the asteroid
+	* 	@param win - the window on which weï¿½ll draw the asteroid
 	*/
 	void drawAsteroid(sf::RenderWindow& win);
 
@@ -253,7 +253,7 @@ private:
 	/**
 	*   Draws the spaceobject on the given window as a ship
 	*
-	* 	@param win - the window on which we’ll draw the ship
+	* 	@param win - the window on which weï¿½ll draw the ship
 	*/
 	void drawShip(sf::RenderWindow& win);
 
@@ -262,7 +262,7 @@ private:
 	/**
 	*   Draws exploding ship on the given window
 	*
-	* 	@param win - the window on which we’ll draw the ship
+	* 	@param win - the window on which weï¿½ll draw the ship
 	*/
 	void drawExplodingShip(sf::RenderWindow& win);
 	
